@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="high-title">Sign Up</h1>
+        <marquee  behavior="alternate" direction="left">Hope you like ^^</marquee>    
+        <form action="">
+            <table>
+                <tr>
+                    <td class="title">Full Name:</td>
+                    <td>
+                        <input type="text" placeholder="Your full name*">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Sex:</td>
+                    <td class="radio-box">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">: Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">: Female</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Brithday:</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Email:</td>
+                    <td>
+                        <input type="email" placeholder="something@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Phone:</td>
+                    <td>
+                        <input type="number" placeholder="+84*" min="1000000000" max="9999999999">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Username:</td>
+                    <td>
+                        <input type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Password:</td>
+                    <td>
+                        <input type="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">Confim Password:</td>
+                    <td>
+                        <input type="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">
+                        <label for="favorite">Favorite:</label>
+                    </td>
+                    <td>
+                        <select name="favorite" id="favorite">
+                            <option value="soccer" selected="selected">Soccer</option>
+                            <option value="volleyball">Volleyball</option>
+                            <option value="ping-pong">Ping-pong</option>
+                            <option value="badminton">Badminton</option>
+                            <option value="skipping">Skipping</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td class="title"></td>
+                    <td></td>
+                </tr> -->
+            </table>
+        </form>
+        <div class="submit">
+            <div class="accept">
+                <input type="radio">
+                I accept your rule!
+            </div>
+            <input type="submit" value="GET STARTED" class="started">
+        </div>
+    </div>
+    
+</body>
+</html>

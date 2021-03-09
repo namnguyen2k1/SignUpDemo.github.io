@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  padding: 50px;
+  padding-top: 0;
+  background: #280138;
+  border-style: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 10px 0px 10px darkviolet;
+          box-shadow: inset 10px 0px 10px darkviolet;
+  position: relative;
+}
+
+.container .high-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  padding: 20px 0px 0px 0px;
+  color: #d7ee0c;
+  text-shadow: 0 0 10px #da9706;
+}
+
+.container marquee {
+  color: #d7ee0c;
+}
+
+.container table, .container tr, .container td {
+  border-collapse: collapse;
+}
+
+.container table {
+  padding: 10px;
+  width: 100%;
+  background: darkgoldenrod;
+}
+
+.container tr {
+  border-top: 2px solid darkred;
+  border-bottom: 2px solid darkred;
+}
+
+.container tr:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container tr:hover:nth-child(even) td {
+  background: #e2a453;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container tr:hover:nth-child(even) .title {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #e2a453;
+}
+
+.container tr:hover:nth-child(odd) td {
+  background: darkgoldenrod;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container tr:hover:nth-child(odd) .title {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: darkgoldenrod;
+}
+
+.container tr:nth-child(even) td {
+  background: #e2a453;
+}
+
+.container td {
+  width: 200px;
+  height: 50px;
+  background: darkgoldenrod;
+  font-weight: bolder;
+  font-style: italic;
+  border: none;
+}
+
+.container td select {
+  width: 80%;
+  background: #d7ee0c;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.container .title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 50px;
+  font-style: normal;
+}
+
+.container input {
+  width: 80%;
+  background: #d7ee0c;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.container input:hover {
+  pointer-events: stroke;
+}
+
+.container .radio-box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .radio-box input {
+  width: 20px;
+}
+
+.container .radio-box label:nth-child(2) {
+  margin-right: 25px;
+}
+
+.container .submit {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .submit .accept {
+  margin-left: 20px;
+  color: burlywood;
+  font-size: 20px;
+}
+
+.container .submit .accept input {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.container .submit .started {
+  margin-right: 20px;
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 10px 5px 25px 10px;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #680606;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F09819), color-stop(51%, #EDDE5D), to(#F09819));
+  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+}
+
+.container .submit .started:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #2c8608;
+}
+/*# sourceMappingURL=style.css.map */
